@@ -15,6 +15,11 @@ def insert_tables(cur, conn):
         cur.execute(query)
         conn.commit()
 
+def delete_tables(cur, conn):
+    for query in delete_table_queries:
+        print("Running "+query)
+        cur.execute(query)
+        conn.commit()
 
 def main():
     config = configparser.ConfigParser()
