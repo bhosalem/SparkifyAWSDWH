@@ -19,7 +19,7 @@ Refer below the architecture diagram
 	Type : json
 	contains : This file contains data columns for dimensions users and time
 	Sample Data:
- bhosalem-patch-1
+ 
 ![Log data](https://github.com/bhosalem/SparkifyDataWarehouse/blob/bhosalem-patch-1/log-data.png)
 
 ## 2. Dimension tables:
@@ -34,12 +34,7 @@ E.g Number of users which change to paid subscription in given period of time an
 1. Run "python create_tables.py" file from command line
    Creates tables for building schema
 2. Run "python etl.py" from command line
-   Extracts data from song data and log data files stored in S3 and loads them in respective tables in Redshift.
-
-   
-=======
-![Log-Data](https://github.com/bhosalem/SparkifyDataWarehouse/blob/master/log-data.png)
-      
+   Extracts data from song data and log data files stored in S3 and loads them in respective tables in Redshift.    
 
 # Sample Analytics Queries
 ## 1. Paid subscription users location wise
