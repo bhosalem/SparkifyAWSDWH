@@ -8,7 +8,7 @@ Since the analytics queries are read heavy, a schema which better suits the fast
 
 ## Architechture :
 Refer below the architecture diagram
-![Sparkify Architecture]()
+![Sparkify Architecture](https://github.com/bhosalem/SparkifyAWSDataMart/blob/master/Process%20Flow.PNG)
 ## 1. Data files:
 	There are two data feed files
 ### Song Data file:
