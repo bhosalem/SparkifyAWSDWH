@@ -35,7 +35,9 @@ E.g Number of users which change to paid subscription in given period of time an
 1. Run "python create_tables.py" file from command line
    Creates tables for building schema
 2. Run "python etl.py" from command line
-   Extracts data from song data and log data files stored in S3 and loads them in respective tables in Redshift.    
+   Extracts data from song data and log data files stored in S3 and loads them in respective tables in Redshift.
+   
+**Note : Fill your Cluster details and IAM role details befoer running the scripts.**
 
 # Sample Analytics Queries
 ## 1. Number of times a song was heard by each user
