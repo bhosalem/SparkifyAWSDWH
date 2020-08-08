@@ -1,6 +1,7 @@
 import configparser
 import psycopg2
-from sql_queries import copy_table_queries, insert_table_queries, delete_table_queries
+from sql_queries import copy_table_queries, insert_table_queries, \
+    delete_table_queries
 
 
 def load_staging_tables(cur, conn):
@@ -11,23 +12,27 @@ def load_staging_tables(cur, conn):
 
 def insert_tables(cur, conn):
     for query in insert_table_queries:
-        print("Running "+query)
+        print 'Running ' + query
         cur.execute(query)
         conn.commit()
 
+
 def delete_tables(cur, conn):
     for query in delete_table_queries:
-        print("Running "+query)
+        print 'Running ' + query
         cur.execute(query)
         conn.commit()
+
 
 def main():
     config = configparser.ConfigParser()
     config.read('dwh.cfg')
 
-    conn = psycopg2.connect("host={} dbname={} user={} password={} port={}".format(*config['CLUSTER'].values()))
+    conn = \
+        psycopg2.connect('host={} dbname={} user={} password={} port={}'.format(*config['CLUSTER'
+                         ].values()))
     cur = conn.cursor()
-    
+
     load_staging_tables(cur, conn)
     delete_tables(cur, conn)
     insert_tables(cur, conn)
@@ -35,5 +40,5 @@ def main():
     conn.close()
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
