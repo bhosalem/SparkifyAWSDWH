@@ -23,7 +23,7 @@ Refer below the architecture diagram
 ![Log data](https://github.com/bhosalem/SparkifyDataWarehouse/blob/bhosalem-patch-1/log-data.png)
 
 ## 2. Dimension tables:
-dim_songs, dim_users, dim_artists and time are the four dimesion tables as seen n the schema diagram. Refer the [DDL](https://github.com/bhosalem/SparkifyAWSDataMart/blob/master/sql_queries.py) for the columns and datatypes
+dim_songs, dim_users, dim_artists and dim_time are the four dimesion tables as seen n the schema diagram. Refer the [DDL](https://github.com/bhosalem/SparkifyAWSDataMart/blob/master/sql_queries.py) for the columns and datatypes
 for each of the dimension tables. All the dimension tables are of type **Slowly Changing Dimension Type-1**. It means that each of the dimensions will maintain only the latest information for the files loaded.
 E.g: If User A was opting the for free subscription till 21st April 2019 and switched to paid at a later data then table user will reflect 'level' as 'Paid'. Earlier record for that user gets overwritten to Paid. This avoids any dupliaction as well in the dimensions.
 
