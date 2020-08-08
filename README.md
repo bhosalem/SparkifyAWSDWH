@@ -38,8 +38,8 @@ E.g Number of users which change to paid subscription in given period of time an
    Extracts data from song data and log data files stored in S3 and loads them in respective tables in Redshift.    
 
 # Sample Analytics Queries
-## 1. Paid subscription users location wise
-![Paid User Subscriptions Locationwise](https://github.com/bhosalem/SparkifyDataWarehouse/blob/bhosalem-patch-1/Paid_users_count_locationwise.PNG)
+## 1. Number of times a song was heard by each user
+![Number of time song was heard by each user](https://github.com/bhosalem/SparkifyDataWarehouse/blob/bhosalem-patch-1/Paid_users_count_locationwise.PNG)
 
 
 
