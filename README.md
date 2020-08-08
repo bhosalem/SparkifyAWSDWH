@@ -39,7 +39,7 @@ E.g Number of users which change to paid subscription in given period of time an
 
 # Sample Analytics Queries
 ## 1. Number of times a song was heard by each user
-![Number of time song was heard by each user](https://github.com/bhosalem/SparkifyDataWarehouse/blob/bhosalem-patch-1/Paid_users_count_locationwise.PNG)
+![Number of time song was heard by each user](https://github.com/bhosalem/SparkifyAWSDataMart/blob/master/user_song_analytics.PNG)
 
 
 
