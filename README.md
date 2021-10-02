@@ -1,7 +1,7 @@
 # Sparkify Datamart on AWS
 A music streaming startup, Sparkify, has grown their user base and song database and want to move their processes and data onto the cloud. Their data resides in S3, in a directory of JSON logs on user activity on the app, as well as a directory with JSON metadata on the songs in their app.
 
-We will build an ETL pipeline that extracts their data from S3, stages them in Redshift, and transforms data into a set of dimensional tables for their analytics team to continue finding insights like what songs their users are listening to.
+We will build an ETL pipeline that extracts their data from S3, stages it in Redshift, and transforms data into a set of dimensional tables for their analytics team to continue finding insights like what songs their users are listening to.
 Since the analytics queries are read heavy, a schema which better suits the faster read performance would be STAR schema as described in the schema design diagram below.Columns marked as **bold** in the diagram are Primary keys for those tables/entities. Lines connecting entities represents Foreign key relationships between tables.
 
 ![Sparkify Star Schema](https://github.com/bhosalem/SparkifyAWSDataMart/blob/master/SchemaDiagram.png)
